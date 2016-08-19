@@ -1,0 +1,21 @@
+<html>
+<tite>----</tite>
+<body>
+    <div id="graphdiv4" style="width:500px; height:300px;"></div>
+
+    <script type="text/javascript">
+    g3 = new Dygraph(
+            document.getElementById("graphdiv4"),
+            "{{ url_for('static',
+            filename='data/corpus1.csv') }}", {
+                fractions: true,
+                errorBars: true,
+                showRoller: true,
+                rollPeriod: 3
+            }
+    );
+    </script>
+
+</body>
+</html>
+

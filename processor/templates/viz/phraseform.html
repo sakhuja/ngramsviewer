@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Phrase filter {% endblock title %}
+
+{% block main %}
+    <div class="panel panel-info">
+        <div class="panel-heading"> NGram filter </div>
+        <div class="panel-body">
+            <div class="container">
+                <form method="post">
+                    <div class="form-group row">
+                        {% if error %}<p class="alert alert-error">{{ error }}</p>{% endif %}
+                        <div class="control-group{% if form.phrases.errors %} error{% endif %}">
+                        {{ form.phrases.label(class="control-label") }}
+                            <div class="controls">
+                              {{ form.phrases }}
+                              {% for error in form.phrases.errors %}<span class="help-inline">{{ error }}</span>{% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Filter</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock main %}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie ie9" lang="en" class="no-js"> <![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+
+	<title>Zi - Simple App Landing Page</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Zi - Simple App Landing Page">
+	<meta name="author" content="The Develovers">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css') }}" type="text/css">
+    <meta content="width=device-width" name="viewport">
+
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,600' rel='stylesheet' type='text/css'>
+
+    <!-- Fav and touch icons -->
+	<link href="{{ url_for('static', filename = 'assets/ico/zi-favicon144x144.png') }}" rel="apple-touch-icon-precomposed" type="image/png" sizes="144x144">
+	<link href="{{ url_for('static', filename = 'assets/ico/zi-favicon114x114.png') }}" rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114">
+    <link href="{{ url_for('static', filename = 'assets/ico/zi-favicon57x57.png') }}" rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114">
+    <link href="{{ url_for('static', filename = 'assets/ico/zi-favicon72x72.png') }}" rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114">
+
+	<link rel="shortcut icon" href="assets/ico/favicon.png">
+
+	<style type="text/css">
+	body {
+		padding-bottom: 50px;
+	}
+	
+	h2 {
+		font-size: 18px;
+	}
+	
+	a {
+		text-align: center;
+	}
+	
+	a:hover,
+	a:focus {
+		text-decoration: none;
+		color: #848484;
+	}
+	
+	img {
+		max-width: 100%;
+	}
+	
+	.heading {
+		margin-top: 50px;
+	}
+	
+	.logo {
+		width: 70px;
+		height: 70px;
+		margin: 0 auto;
+		line-height: 60px;
+		text-align: center;
+		border: 3px solid #ccc;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+	}
+	</style>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="heading text-center">
+			<div class="logo">
+				<img src="{{ url_for('static', filename = 'assets/ico/zi-favicon57x57.png' )}}" alt="Zi Landing Page">
+			</div>
+			<h1>Zi - Simple App Landing Page</h1>
+			<p class="lead">Clean and elegant Bootstrap responsive landing page for your App.</p>
+		</div>
+		<hr>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<a href="index-fullscreen-slider.html">
+						<img src="{{ url_for('static', filename = 'img-demo/zi-fullscreen-slider-sm.png') }}" alt="Full Screen Slider">
+						<h2>Fullscreen Slider <span class="label label-danger">NEW</span></h2>
+					</a>
+					<p class="text-center">
+						<a href="index-fullscreen-slider-no-preloader.html">No Preloader <span class="label label-danger">NEW</span></a>
+						<br>
+						<a href="index-fullscreen-slider-no-animation.html">No Animation <span class="label label-danger">NEW</span></a>
+					</p>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<a href="index-video.html">
+						<img src="{{ url_for('static', filename = 'img-demo/zi-video-sm.png' ) }}" alt="Full Screen Video">
+						<h2>Fullscreen Video</h2>
+					</a>
+					<p class="text-center">
+						<a href="index-video-no-preloader.html">No Preloader <span class="label label-danger">NEW</span></a>
+						<br>
+						<a href="index-video-no-animation.html">No Animation <span class="label label-danger">NEW</span></a>
+					</p>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-5">
+					<a href="index-single-column.html">
+						<img src="{{ url_for('static', filename = 'img-demo/zi-single-col-sm.png' )}}" alt="Single Column">
+						<h2>Single Column Header</h2>
+					</a>
+					<p class="text-center">
+						<a href="index-single-column-no-preloader.html">No Preloader <span class="label label-danger">NEW</span></a>
+						<br>
+						<a href="index-single-column-no-animation.html">No Animation <span class="label label-danger">NEW</span></a>
+					</p>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<a href="index-image-nexus.html">
+						<img src="{{ url_for('static', filename = 'img-demo/zi-image-nexus-sm.png' ) }}" alt="Full Screen Image Nexus Phone">
+						<h2>Fullscreen Image (Nexus)</h2>
+					</a>
+					<p class="text-center">
+						<a href="index-image-nexus-no-preloader.html">No Preloader <span class="label label-danger">NEW</span></a>
+						<br>
+						<a href="index-image-nexus-no-animation.html">No Animation <span class="label label-danger">NEW</span></a>
+					</p>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-5">
+					<a href="index-image.html">
+						<img src="{{ url_for('static', filename = 'img-demo/zi-image-sm.png' )}}" alt="Full Screen Image">
+						<h2>Fullscreen Image</h2>
+					</a>
+					<p class="text-center">
+						<a href="index-image-no-preloader.html">No Preloader <span class="label label-danger">NEW</span></a>
+						<br>
+						<a href="index-image-no-animation.html">No Animation <span class="label label-danger">NEW</span></a>
+					</p>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<a href="pre-launch.html">
+						<img src="{{ url_for('static', filename = 'img-demo/zi-prelaunch-sm.png' )}}" alt="Pre-launch Page">
+						<h2>Bonus: Pre-launch Page</h2>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %} -- NGram Viewer -- {% endblock title %}
+
+{% block main %}
+    <div class="panel panel-info">
+        <div class="panel-heading"> NGram filter </div>
+        <div class="panel-body">
+            <div class="container">
+                <form method="post">
+                    <div class="form-group row">
+                        {% if error %}<p class="alert alert-error">{{ error }}</p>{% endif %}
+                        <div class="control-group{% if form.phrases.errors %} error{% endif %}">
+                        {{ form.phrases.label(class="control-label") }}
+                            <div class="controls">
+                              {{ form.phrases }}
+                              {% for error in form.phrases.errors %}<span class="help-inline">{{ error }}</span>{% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Filter</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="graphdiv3" style="width:500px; height:300px;"></div>
+
+    <script type="text/javascript">
+            g3 = new Dygraph(document.getElementById("graphdiv3"),
+                                      "{{ url_for('static', filename='data/corpus.csv') }}", {
+          legend: 'always',
+          title: 'Books NGrams Viewer',
+          showRoller: true,
+          rollPeriod: 14,
+          ylabel: 'Occurrence Freq',
+        });
+    </script>
+
+{% endblock main %}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <title>{% block title %}{% endblock title %}</title>
+
+    <!-- SCRIPTS -->
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/dygraph-combined.js') }}"></script>
+
+    <script type="text/javascript"
+            src="{{ url_for('static', filename='bower_components/jquery/dist/jquery.min.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ url_for('static', filename='bower_components/moment/min/moment.min.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ url_for('static',
+            filename='bower_components/bootstrap/dist/js/bootstrap.min.js') }}">
+    </script>
+
+    <script type="text/javascript"
+            src="{{ url_for('static',
+            filename='bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js') }}">
+    </script>
+
+    <!-- CSS -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon"/>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='bower_components/bootstrap/dist/css/bootstrap.min.css') }}"/>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css') }}"/>
+
+    <!-- RESPONSIVE DESIGN -->
+    <meta content="width=device-width" name="viewport">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+</head>
+<body>
+    {% block main %}{% endblock main %}
+</body>
+</html>

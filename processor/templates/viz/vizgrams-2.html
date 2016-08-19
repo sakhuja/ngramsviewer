@@ -1,0 +1,21 @@
+<html>
+<head>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/dygraph-combined.js') }}"></script>
+</head>
+
+<body>
+<div id="graphdiv3" style="width:500px; height:300px;"></div>
+
+<script type="text/javascript">
+        g3 = new Dygraph(document.getElementById("graphdiv3"),
+                                  "{{ url_for('static', filename='data/corpus-back.csv') }}", {
+      legend: 'always',
+      title: 'Books NGrams Viewer',
+      showRoller: true,
+      rollPeriod: 14,
+      ylabel: 'Occurrence Freq',
+    });
+</script>
+
+</body>
+</html>

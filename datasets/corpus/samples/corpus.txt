@@ -1,0 +1,6 @@
+Date,token,occurrence_count
+1834/01/01,zeal,3
+1836/01/01,zeal,4
+1838/01/01,zeal,2
+1840/01/01,zeal,1
+1841/01/01,zeal,4
