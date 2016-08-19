@@ -1,6 +1,7 @@
 ### 1. Generate indexes from the books dataset
 
 **USAGE** : `./ngrams.py --year <YEAR> --gram <GRAMS> [--withdocids] [--withfreq] [--debug]`
+
 **USAGE** : `./ngrams.py --help`
 
 **EXAMPLE 1:** `./ngrams.py --year 2012 --gram 4 --withfreq # this would generate the freq count index for the ngrams`
