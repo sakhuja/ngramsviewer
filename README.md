@@ -16,3 +16,20 @@
 `http://127.0.0.1:5000/ngrams/viz`
 
 ---
+####  Sample Queries :
+
+### 5-Grams : Sample Queries
+
+### 4-Grams : Sample Queries
+if they did not
+
+### 3-Grams : Sample Queries
+    and so on
+    
+### 2-Grams : Sample Queries
+this is, to be
+
+### 1-Grams : Sample Queries
+who, when, where
+girl, woman, lady
+man, gentleman
