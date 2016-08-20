@@ -1,0 +1,6 @@
+{
+  "name": "Ngramsviewer",
+  "tagline": "simple app for vizualizing ngrams",
+  "body": "### 1. Generate indexes from the books dataset\r\n\r\n**USAGE** : `./ngrams.py --year <YEAR> --gram <GRAMS> [--withdocids] [--withfreq] [--debug]`\r\n\r\n**USAGE** : `./ngrams.py --help`\r\n\r\n**EXAMPLE 1:** `./ngrams.py --year 2012 --gram 4 --withfreq # this would generate the freq count index for the ngrams`\r\n\r\n**EXAMPLE 2:** `./ngrams.py --year 2012 --gram 4 --withdocids # this would generate the docids based index for the ngrams`\r\n\r\n### **OR**, Renerate the complete n-grams dataset, using this\r\n\r\n`./scripts/generate-ngrams.sh`\r\n    \r\n### 2. Run the ngram viz app\r\n\r\n`source ${BASE_PATH}/venvs/ngramenv/bin/activate`\r\n\r\n`python manage.py runserver`\r\n\r\n`http://127.0.0.1:5000/ngrams/viz`\r\n\r\n---\r\n####  Sample Queries :\r\n\r\n### 4-Grams : Sample Queries\r\n    if they did not\r\n\r\n### 3-Grams : Sample Queries\r\n    and so on\r\n    \r\n### 2-Grams : Sample Queries\r\n    this is, to be\r\n\r\n### 1-Grams : Sample Queries\r\n    who, when, where\r\n    girl, woman, lady\r\n    man, gentleman\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
