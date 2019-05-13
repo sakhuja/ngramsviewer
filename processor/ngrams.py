@@ -209,3 +209,4 @@ if __name__ == '__main__':
             for doc in result_docs:
                 for index in inverted[word][doc]:
                     print '   - %s...' % extract_text(doc, index)
+

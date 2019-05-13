@@ -15,7 +15,10 @@
 `python manage.py runserver`
 `http://127.0.0.1:5000/ngrams/viz`
 
----
+### 3. remote hosting
+`http://peaceful-tor-45189.herokuapp.com/ngrams/viz`
+----------------------------------------------------
+
 ####  Sample Queries :
 
 ### 5-Grams : Sample Queries
